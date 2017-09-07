@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cruz.cruzquiz1.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo"/>
+
+    <Button
+        android:id="@+id/is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.S. Information System"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="410dp"
+        android:onClick="toIS"
+        android:layout_marginBottom="192dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/it"
+        android:layout_alignEnd="@+id/it" />
+
+
+    <Button
+        android:id="@+id/it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.S. Information Technology"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="410dp"
+        android:onClick="toIT"
+        android:layout_marginBottom="34dp"
+        android:layout_above="@+id/is"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/cs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B.S. Computer Science"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="410dp"
+        android:onClick="toCS"
+        android:layout_above="@+id/it"
+        android:layout_alignStart="@+id/it"
+        android:layout_marginBottom="28dp"
+        android:layout_alignEnd="@+id/it" />
+
+
+
+
+</RelativeLayout>
